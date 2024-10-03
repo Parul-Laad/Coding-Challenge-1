@@ -1,0 +1,61 @@
+.user-dashboard {
+    position: relative;
+    padding: 20px;
+    color: rgb(21, 3, 77);
+    min-height: 100vh;
+    background-image: url('../../../public/library_bg.jpg'); /* Replace with the actual path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .user-dashboard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust this for the desired blur effect */
+    backdrop-filter: blur(10px);
+    z-index: -1;
+  }
+  
+  .user-dashboard .ui.header {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .user-dashboard .ui.header.h2 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    position: relative;
+  }
+  
+  .user-dashboard .ui.header.h3 {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .user-dashboard .ui.button {
+    margin-right: 10px;
+  }
+  
+  .user-dashboard .logout-button {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+  }
+  
+  .book-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+  }
+  

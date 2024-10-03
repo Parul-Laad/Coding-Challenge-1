@@ -1,0 +1,82 @@
+.admin-dashboard {
+    position: relative; /* Required for absolute positioning of the ::before element */
+    padding: 20px;
+    color: rgb(21, 3, 77); /* Text color */
+}
+
+.admin-dashboard::before {
+    content: ''; /* Required to create the pseudo-element */
+    position: absolute; /* Position it absolutely to cover the container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../public/library_bg.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Place it behind the content */
+}
+
+.admin-dashboard .ui.header {
+    margin-bottom: 20px;
+    font-size: 2rem; /* Larger font size for the header */
+    font-weight: bold; /* Bold font weight for the header */
+    text-align: center; /* Center the header text */
+    display: flex;
+    justify-content: center;
+}
+.admin-dashboard .ui.header.h2 {
+    color: #fff; /* White text color for the header */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for the header */
+    position: relative;
+    z-index: 1;
+}
+
+.admin-dashboard .ui.header.h3 {
+    color: #fff; /* White text color for the subheader */
+    text-shadow: 2px 2px 4px #000; /* Text shadow for the subheader */
+}
+
+.admin-dashboard .ui.button {
+    margin-right: 10px; /* Spacing between buttons */
+    transition: background-color 0.3s ease-in-out; /* Transition effect for hover */
+}
+
+.admin-dashboard .ui.button:hover {
+    background-color: #4CAF50; /* Green background color for hover */
+    color: #fff; /* White text color for hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for hover */
+}
+
+.admin-dashboard .ui.button.green:hover {
+    background-color: #3e8e41; /* Darker green background color for hover */
+}
+
+.admin-dashboard .add-book-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.admin-dashboard .ui.divider {
+    margin: 20px 0; /* Spacing for dividers */
+}
+
+.admin-dashboard .ui.table {
+    margin-top: 20px; /* Spacing for the table */
+}
+
+.admin-dashboard .ui.table th {
+    background-color: #f0f0f0; /* Light gray background color for the table headers */
+}
+
+.admin-dashboard .ui.table td {
+    background-color: #fff; /* White background color for the table cells */
+}
+
+.logout-button {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}

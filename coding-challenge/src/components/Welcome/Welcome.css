@@ -1,0 +1,57 @@
+/* Welcome.css */
+.welcome-container {
+    position: relative; /* Required for absolute positioning of the ::before element */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow of blurred background */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Slightly darker shadow for contrast */
+    color: rgb(21, 3, 77); /* Change text color to white for better visibility */
+}
+
+.welcome-container::before {
+    content: ''; /* Required to create the pseudo-element */
+    position: absolute; /* Position it absolutely to cover the container */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../../../public/library_bg.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Place it behind the content */
+}
+
+.welcome-title {
+    font-size: 3rem; /* Increased font size for better visibility */
+    margin-bottom: 20px;
+}
+
+.welcome-description {
+    font-size: 1.5rem; /* Increased font size for better visibility */
+    margin-bottom: 30px;
+}
+
+.welcome-button {
+    margin: 10px 0; /* Added top and bottom margin for spacing */
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white; /* Text color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Specific margin for Register button to increase distance */
+.welcome-button:last-child {
+    margin-top: 20px; /* Increased space above the Register button */
+}
+
+.welcome-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}

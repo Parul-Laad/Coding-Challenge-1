@@ -1,0 +1,25 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  button {
+    background-color: #21ba45;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #16ab39;
+  }
+  
+  form {
+    margin: 20px 0;
+  }
+  
